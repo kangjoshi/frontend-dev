@@ -106,3 +106,28 @@
 
 ### SASS
   - sass, scss 언어로 작성된 코드를 css로 변경
+  - sass-loader를 통해 웹팩으로 통합
+
+### ESLint
+  - ECMAScript 코드에서 문제점을 검사, 정정
+  - 검사 항목
+    - 포맷팅
+      - 코드 컨벤션
+    - 코드 품질
+      - 잠재적인 오류 발생 가능한 코드를 발견하여 오류 가능성을 줄인다.
+  - 설정 파일
+    - `npx eslint --init` 명령어를 통해 생성
+  - 규칙
+    - 코드 검사 규칙을 정의
+    - Extensible Config
+      - 미리 정의되어 있는 규칙 세트
+  - 자동화
+    - 코딩할 때 마다 수시로 실행해야 하므로 자동화를 하여 검사
+      1. (깃 사용한다면)깃 훅
+         - husky 모듈 사용
+
+### Prettier
+  - 코드를 일관적으로 만들어 준다. (ESLint 차이점은 기능에서 코드 품질 기능은 제외한 포맷팅 기능을 제공)
+  - ESLint와 통합하여 사용 (eslint-config-prettier, eslint-plugin-prettier)
+    - 코드 품질 : ESLint
+    - 포맷팅 : Prettier
