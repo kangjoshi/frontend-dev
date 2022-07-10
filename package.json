@@ -33,7 +33,10 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \" 커밋 전에 출력 됨\""
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
   }
 }
